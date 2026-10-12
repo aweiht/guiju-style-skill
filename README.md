@@ -1,16 +1,22 @@
 # guiju-style-skill
 
-`guiju-style` 根据一句日常吐槽生成“规矩体”调侃文案：用一本正经的歪理、固定收尾和反差感回应原句。
+`guiju-style` 是一个通用 AI 文案 Skill：把一句日常吐槽改写成“规矩体”调侃，用一本正经的歪理、固定收尾和反差感回应原句。
 
-## 使用
+## 在任何 AI 对话中使用
 
-在 Codex 中输入 `$guiju-style`，再附上原句，例如：
+打开 [Skill 原文](skills/guiju-style/SKILL.md)，把文件里的规则粘贴到任何能接收文本指令的 AI 对话中，然后再发送你想回应的原句：
 
 ```text
-$guiju-style 我说今天早点睡，结果又刷手机到两点
+健身卡办了一个月，去了三次，最近开始研究怎么转卡
 ```
 
-## 安装到 Codex
+更多完整场景见[案例集](examples.md)。
+
+## 在支持 Skill 的工具中使用
+
+支持加载 Skill 或指令文件的工具，可以按各自的方式加载 `SKILL.md`。支持 `$name` 调用语法的工具也可以用 `$guiju-style` 调用；例如 Codex 支持在对话中输入 `$guiju-style`，再附上原句。
+
+## 可选：安装到 Codex
 
 在仓库根目录运行以下命令。`mkdir` 会在目标目录已存在时失败，因此不会覆盖已有 Skill：
 
@@ -31,6 +37,7 @@ AGENTS.md
 .gitignore
 LICENSE
 README.md
+examples.md
 skills/
 └── guiju-style/
     └── SKILL.md
